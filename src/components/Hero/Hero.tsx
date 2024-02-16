@@ -34,7 +34,7 @@ const Hero = () => {
 
       <div className="hero_title">
         <h2>Next generation digital banking</h2>
-        <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
+        <p>Take your financial life online. Your Easybank account will be a one-stop-shop  for spending, saving, budgeting, investing, and much more.</p>
         <button className="main_btn hover_animation">Request Invite</button>
       </div>
 

@@ -1,19 +1,19 @@
 .feature_section {
     background-color: #F4F5F7;
     transition: all ease-in-out 300ms;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     padding: 0 10rem 3rem;
+    z-index: -1;
     .feature_content {
         position: relative;
         display: flex;
         flex-direction: column;
         .feature_title {
             padding: 0;
-            padding-block-start: 2rem;
+            padding-block-start: 7rem;
             h2 {
                 color: #2D314D;
                 font-size: 40px;
