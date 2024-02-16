@@ -1,0 +1,113 @@
+.footer_section {
+    background-color: #2D314D;
+    padding: 3rem  14rem 2rem;
+    .footer_container {
+        display: flex;
+        justify-content: space-between;
+
+        .footer_content {
+            display: flex;
+            justify-content: space-between;
+            gap: 10rem;
+            .footer_social {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+    
+                ul {
+                    display: flex;
+                    gap: 1rem;
+                }
+            }
+    
+            .footer_short_links {
+                color: white;
+                
+                ul {
+                    all: unset;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 1rem;
+                    
+                    li {
+                        padding-inline-end: 3rem;
+                        &:hover {
+                            cursor: pointer;
+                        }
+
+                    }
+                };
+            }
+        }
+
+
+        .footer_contact_us {
+            p {
+                color: hsl(0, 2%, 68%);
+                font-weight: 200;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {  
+    .footer_section {
+        margin-block-start: 2rem;
+        padding: 2rem 0.5rem 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .footer_container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            .footer_content {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 1rem;
+                
+                .footer_social {
+                    display: flex;
+                    flex-direction: column;
+        
+                    ul {
+                        all: unset;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 1rem;
+                    }
+                }
+        
+                .footer_short_links {
+                    color: white;
+                    
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        li {
+                            all: unset;
+                        }
+                    };
+                }
+            }
+    
+    
+            .footer_contact_us {
+                text-align: center;
+                margin-block-start: 1.25rem;
+                p {
+                    padding-block-start: 0.5rem;
+                    color: hsl(0, 2%, 68%);
+                    font-weight: 200;
+                }
+            }
+        }
+    }
+}

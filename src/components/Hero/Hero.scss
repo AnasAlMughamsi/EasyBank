@@ -1,0 +1,180 @@
+.hero_container {
+    margin-top: 72px;
+    left: 0;
+    right: 0;
+    font-family: Public Sans;
+
+    display: flex;
+    justify-content: space-between;
+    margin-block-end: 5rem;
+
+    .hero_title {
+        display: flex;
+        flex-direction: column;
+        margin-inline-start: 14rem;
+        margin-block-start: 5rem;
+        h2 {
+            color: #2D314D;
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 300;
+            letter-spacing: -1px;
+            width: 40%;
+        }
+
+        p {
+            color: #9597A5;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px; /* 155.556% */
+            letter-spacing: -0.281px;
+            width: 50%;
+
+        }   
+
+    }
+
+    @media screen and (min-width: 850px) {
+        .hero_landing_image {
+            position: relative;
+            #img1 {
+                display: block;
+            }
+            #img2 {
+                display: none;
+            }
+            .hero_image_1 {
+                position: fixed;
+                top: -200px;
+                right: -200px;
+                z-index: -3;
+
+            }
+            .hero_image_2 {
+                z-index: 0;
+                margin: 0;
+                padding: 0;
+                position: fixed;
+                top: -100px;
+                right: -130px;
+                fill: #000105;
+                filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.15));
+                transition: z-index 1s;
+            }
+        }
+    }
+
+  
+
+    @media screen and (min-width: 1950px) {
+
+        .hero_title {
+            margin-block-start: 10rem;
+            margin-inline-start: 15rem;
+            h2 {
+                width: 60%;
+                font-size: 96px;
+                letter-spacing: -1px;
+                margin: 0;
+
+            }
+            
+            p {
+                width: 40%;
+                font-size: 24px;
+
+            }
+            button {
+                font-size: 17px;
+                width: calc(163px * 1.35);
+                height: calc(44px * 1.25);
+                border-radius: 30px;
+            }
+        }
+
+        .hero_landing_image {
+            position: relative;
+            
+            .hero_image_1 {
+                z-index: -1;
+                width: 2000px;
+                // height: 1200px;
+                position: fixed;
+                bottom: 100px;
+                right: -600px;
+            }
+            .hero_image_2 {
+                z-index: -1;
+                position: fixed;
+                width: 800px;
+                right: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .hero_container {
+        flex-direction: column-reverse;
+        
+        .hero_title {
+            // border: 1px solid red;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-inline: 0.5rem;
+            margin-block-start: 1rem;
+            text-align: center;
+            gap: 2rem;
+            h2 {
+                all: unset;
+                font-size: 48px;
+                // text-align: center;
+                color: #2D314D;
+                font-style: normal;
+                font-weight: 400;
+                letter-spacing: -1px;
+            }
+    
+            p {
+                all: unset;
+                // text-align: center;
+                color: #9597A5;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px; /* 155.556% */
+                letter-spacing: -0.281px;
+    
+            }   
+    
+        }
+    }
+
+    .hero_landing_image {
+        justify-content: center;
+        align-items: center;
+        #img1 {
+            display: none;
+        }
+        #img2 {
+            display: block;
+        }
+        .hero_image_1 {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            top: -10px;
+        }
+        .hero_image_2 {
+            position: absolute;
+            width: 100%;
+            top: -30px;
+            right: 0;
+            fill: #000105;
+            filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.15));
+            transition: z-index 1s;
+        }
+    }
+}
