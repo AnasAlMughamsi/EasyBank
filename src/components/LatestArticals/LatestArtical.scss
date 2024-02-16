@@ -1,37 +1,41 @@
 .artical_section {
     background: rgb(250, 250, 250);
     // width: 100%;
-    height: 75vh;
+    // height: 75vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    // margin-block-end: 5rem;
+    padding-block-end: 5rem;
+    justify-content: space-between;
 
     .artical_cards_container {
         display: flex;
         flex-direction: column;
 
-        H2 {
+        h2 {
             font-size: 32px;
             font-weight: 400;
-            padding-block-start: 5rem;
+            padding-block-start: 3rem;
     
         }
         ul {
             
-            display: flex;
-            gap: 4rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 6rem;
             padding: 0;
+            justify-content: space-between;
+
             .artical_card {
                 background-color: white;
                 display: flex;
                 flex-direction: column;
-                width: 300px;
+                width: 330px;
                 height: 460px;
                 box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
                 border-radius: 0.35rem;
                 .artical_image {
-                    width: 300px;
+                    width: 330px;
                     height: 260px;
                     border-start-end-radius: 0.35rem;
                     border-start-start-radius: 0.35rem;
@@ -52,7 +56,8 @@
                     padding-inline: 2rem 4.5rem;
 
                     &:hover {
-
+                        color: #29ac4c;
+                        text-decoration: underline;
                     }
 
                 }
@@ -70,6 +75,29 @@
         }
     }
 
+
+    @media screen and (max-width:1650px) and (min-width:900px)  {
+        // align-items: self-start;
+        .artical_cards_container {
+            ul {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-content: space-between;
+                gap: 5rem;
+                .artical_card {
+                    width: 350px;
+                    height: 460px;
+                    .artical_image {
+                        width: 350px;
+                        height: 260px;
+                        border-start-end-radius: 0.35rem;
+                        border-start-start-radius: 0.35rem;
+                    }
+                
+                }
+            }
+        }
+    }
   
 }
 
@@ -82,6 +110,7 @@
                 margin-inline-start: 5rem;
             }
             ul {
+                
                 padding-inline: 5rem;
 
                 .artical_card { 
@@ -119,12 +148,13 @@
         height:auto;
         .artical_cards_container {
 
-            H2 {
+            h2 {
                 text-align: center;
             }
             ul {
-                
-                flex-direction: column;
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                // flex-direction: column;
                 gap: 2rem;
                 padding: 0;
                 .artical_card {

@@ -5,15 +5,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    
+    position: relative;
+    padding: 0 10rem 3rem;
     .feature_content {
+        position: relative;
         display: flex;
         flex-direction: column;
-
         .feature_title {
             padding: 0;
-            padding-block-start: 4rem;
+            padding-block-start: 2rem;
             h2 {
                 color: #2D314D;
                 font-size: 40px;
@@ -23,7 +23,6 @@
                 letter-spacing: -0.714px;
             }
             p {
-                width: 35%;
                 color: #9597A5;
                 font-size: 18px;
                 font-style: normal;
@@ -43,8 +42,8 @@
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 1rem;
-                width: 300px;
-                height: 350px;
+                // width: 300px;
+                // height: 350px;
             
                 h4 {
                     all: unset;
@@ -74,10 +73,49 @@
     }
 
 
-    @media screen and (max-width:1324px) and (min-width:900px)  {
+    @media screen and (max-width:1650px) and (min-width:750px)  {
         .feature_content {
-            // padding-inline-start: 5rem;
+            padding-inline-start: 2rem;
+            .feature_title {
+                text-align: center;
+                p {
+                }
+            }
             ul {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                .feature_item {
+                    width: fit-content;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+
+                    h4 {
+                        all: unset;
+                        margin-block-start: 1.5rem;
+                        color: #2D314D;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 28px; /* 116.667% */
+                        letter-spacing: -0.429px;
+    
+                    }
+                    p {
+                        all: unset;
+                        color: #9597A5;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 26px; 
+                        letter-spacing: -0.25px;
+                        padding-inline-end: 0;
+                        width: 50%;
+                    }
+                }
                 
             }
         }
