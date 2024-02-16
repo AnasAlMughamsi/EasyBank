@@ -1,13 +1,13 @@
 .artical_section {
     background: rgb(250, 250, 250);
     // width: 100%;
+    width: fit-content;
+    min-width: 100%;
     height: 75vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-
     // margin-block-end: 5rem;
-
 
     .artical_cards_container {
         display: flex;
@@ -71,6 +71,8 @@
             }
         }
     }
+
+  
 }
 
 @media screen and (min-width: 1950px) {

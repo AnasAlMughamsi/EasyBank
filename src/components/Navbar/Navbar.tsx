@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const addShadowBox = () => {
     const nav:HTMLElement  = document.getElementById("navbar")!;
-    if(window.scrollY >= 100) {
+    if(window.scrollY >= 250) {
       nav.classList.add("shadow")
     } else {
       nav.classList.remove("shadow")

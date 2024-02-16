@@ -1,6 +1,7 @@
 .feature_section {
     background-color: #F4F5F7;
-    width: 100%;
+    width: fit-content;
+    min-width: 100%;
     transition: all ease-in-out 300ms;
 
     display: flex;
@@ -72,6 +73,16 @@
 
         }
         
+    }
+
+
+    @media screen and (max-width:1324px) and (min-width:900px)  {
+        .feature_content {
+            // padding-inline-start: 5rem;
+            ul {
+                
+            }
+        }
     }
 }
 
