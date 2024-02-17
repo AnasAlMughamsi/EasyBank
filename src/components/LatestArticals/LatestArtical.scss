@@ -76,22 +76,41 @@
     }
 
 
-    @media screen and (max-width:1650px) and (min-width:900px)  {
-        // align-items: self-start;
+    // @media screen and (max-width:1650px) and (min-width:900px)  {
+    @media screen and (max-width:1650px)   {
+        .artical_cards_container {
+            // background-color: red;
+            ul {
+                display: flex;
+                // grid-template-columns: repeat(2, 1fr);
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                .artical_card {
+                    width: 300px;
+                    height: 460px;
+                    .artical_image {
+                        width: 300px;
+                        height: 260px;
+                    }
+                
+                }
+            }
+        }
+    }
+    @media screen and (max-width:1290px)  {
         .artical_cards_container {
             ul {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 justify-content: space-between;
-                gap: 5rem;
+                gap: 7rem;
                 .artical_card {
                     width: 350px;
                     height: 460px;
                     .artical_image {
                         width: 350px;
                         height: 260px;
-                        border-start-end-radius: 0.35rem;
-                        border-start-start-radius: 0.35rem;
                     }
                 
                 }
