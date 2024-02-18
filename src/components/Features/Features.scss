@@ -37,13 +37,10 @@
             gap: 4rem;
             padding: 0;
             .feature_item {
-                // border: 1px solid red;
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 1rem;
-                // width: 300px;
-                // height: 350px;
             
                 h4 {
                     all: unset;
@@ -141,37 +138,32 @@
 }
 
 @media screen and (max-width: 750px) { 
+
     .feature_section {
-        width: fit-content;
+        padding: 1rem 2.75rem;
         align-items: center;
         .feature_content {
-            justify-content: center;
-            align-items: center;
+            padding-inline-start: 0;
             .feature_title {
-                display: flex;
                 flex-direction: column;
-                justify-content: center;
                 align-items: center;
-                padding: 1rem;
                 padding-block-start: 0;
-                text-align: center;
                 p {
-                    width: fit-content;
+                    
                 }
 
             }
             ul {
                 all: unset;
-                display: flex;
+                // display: flex;
                 flex-direction: column;
-                align-items: center;
-                justify-content: center;
+                gap: 1rem;
                 .feature_item {
                     justify-content: center;
                     align-items: center;
                     width: fit-content;
                     height: fit-content;
-                    padding: 2rem;
+                    padding: 2rem 0;
                     text-align: center;
                     p {
                         padding-inline-end: 0;
